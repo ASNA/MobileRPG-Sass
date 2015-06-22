@@ -15,10 +15,7 @@ $google-nexus-7-value-device-height: 552px;
     and ($google-feature-device-width: $google-nexus-7-value-device-width ) 
     and ($google-feature-device-height:$google-nexus-7-value-device-height)
     and ($google-feature-orientation: portrait) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Nexus 7 [Landscape] --- */
@@ -27,8 +24,5 @@ $google-nexus-7-value-device-height: 552px;
     and ($google-feature-device-width: $google-nexus-7-value-device-width ) 
     and ($google-feature-device-height:$google-nexus-7-value-device-height)
     and ($google-feature-orientation: landscape) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }

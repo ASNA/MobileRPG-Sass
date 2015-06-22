@@ -23,10 +23,7 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-value-device-width ) 
     and ($google-feature-device-height: $galaxy-nexus-value-device-height)
     and ($google-feature-orientation: portrait) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Galaxy Nexus [Landscape] --- */
@@ -35,10 +32,7 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-value-device-height ) // Note: width & height interchanged
     and ($google-feature-device-height: $galaxy-nexus-value-device-width)
     and ($google-feature-orientation: landscape) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Nexus S Chrome 18 [Portrait] --- */
@@ -47,10 +41,7 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-s-chrome-value-device-width ) 
     and ($google-feature-device-height: $galaxy-nexus-s-chrome-value-device-height )
     and ($google-feature-orientation: portrait) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Nexus S Chrome 18 [Landscape] --- */
@@ -59,10 +50,7 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-s-chrome-value-device-height ) // Note: width & height interchanged
     and ($google-feature-device-height: $galaxy-nexus-s-chrome-value-device-width )
     and ($google-feature-orientation: portrait) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Nexus S Android 2 Stock Browser  [Portrait] --- */
@@ -71,10 +59,7 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-s-android2-value-device-width ) 
     and ($google-feature-device-height: $galaxy-nexus-s-android2-value-device-height )
     and ($google-feature-orientation: portrait) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
 
 /* --- Samsung Nexus S Android 2 Stock Browser  [Landscape] --- */
@@ -83,8 +68,5 @@ $galaxy-nexus-s-android2-value-device-pixel-ratio: 1;
     and ($google-feature-device-width: $galaxy-nexus-s-android2-value-device-height ) // Note: width & height interchanged
     and ($google-feature-device-height: $galaxy-nexus-s-android2-value-device-width )
     and ($google-feature-orientation: landscape) {
-    .DdsBar {
-        /* Increse height to improve Touch experience. */
-        min-height: $dds-bar-min-height + 1em; 
-    }
+    /* Override styles if necessary */
 }
