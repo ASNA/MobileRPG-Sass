@@ -20,13 +20,13 @@ Defines the CSS classes that establish the overall website style.
 
 "Minifying"  a resource is a very simple way to improve performance (reducing the time a website response page takes to be transmitted from the server to the client device).
 
-The process of minification consists of reducing the size of a resource (in this case the CSS file) without losing any of the required syntax imposed by the CSS standard. The Mobile RPG-Sass project, in addition to producing the Framework.css and Theme.css, also produce the minified CSS files: Framework.min.css and Theme.min.css.
+The process of minification consists of reducing the size of a resource (in this case the CSS file) without losing any of the required syntax imposed by the CSS standard. The Mobile RPG-Sass project, in addition to producing the Framework.css and Theme.css, also produces the minified CSS files: Framework.min.css and Theme.min.css.
 
 To use the minified CSS, all you need to do is copy these files to your ~Themes\Current\Styles folder and update the references on your MasterPage(s) to point to the `.min.css` instead of the `.css`
 
 ### Optimization beyond Minification
 
-When your Monarch/Mobile RPG site is complete, you may want to review the list of ASNA Web Controls used for controls that are NOT being used, to remove the related CSS styles. For example, if your Monarch/Mobile RPG website does not use the 5250 Terminal Emulator, you can easily remove a big chunk from `Framework.css` making the size of the minified version even smaller. (Read the section `Removing Unused CSS Styles to Optimize Response Time` below).
+When your Mobile RPG site is complete, you may want to review the list of ASNA Web Controls used for controls that are NOT being used, to remove the related CSS styles. For example, if your Mobile RPG website does not use the 5250 Terminal Emulator, you can easily remove a big chunk from `Framework.css` making the size of the minified version even smaller. (Read the section `Removing Unused CSS Styles to Optimize Response Time` below).
 
 
 ## Installation
@@ -35,7 +35,7 @@ When your Monarch/Mobile RPG site is complete, you may want to review the list o
 2. Click on the "Download ZIP" button.
 3. Save the file in a temporary folder on your PC.
 4. Extract the files in the downloaded zip file.
-5. Copy all the files into your Monarch/Mobile RPG ~Themes\Current\Styles folder.
+5. Copy all the files into your Mobile RPG ~Themes\Current\Styles folder.
 6. To facilitate working with Sass, install the Microsoft "Web Essentials" package for Visual Studio 2013 from here: 
    https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
 
