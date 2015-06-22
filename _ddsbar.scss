@@ -1,0 +1,25 @@
+﻿@import "_config";
+@import "mixins/_ddsbar";
+
+/* ==========================================================================
+   ddsBar
+   ========================================================================== */
+
+.DdsBar {
+    width: 100%;
+    min-height: $dds-bar-min-height;
+    z-index: $top-most-layer;
+}
+
+.NavButton { /* Short text should have a min. width to be touchable */
+    @include nav-bar(auto, $nav-button-margin-top, hidden, ellipsis, none, $nav-button-text-align, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align, $nav-button-touchable-min-width );
+}
+
+.NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+    @extend .NavButton;
+    min-width: $nav-button-touchable-narrow-min-width;
+}
+
+.SubmitButton {
+    @include submit-button($submit-button-font-size, $dds-bar-min-height, $nav-button-touchable-min-width, $submit-button-color)
+}

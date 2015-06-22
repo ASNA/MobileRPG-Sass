@@ -1,0 +1,26 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsTimestampField
+   ========================================================================== */
+
+.DdsTimestampField {
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+}
+
+.DdsTimestampField_Error {
+    @extend .DdsTimestampField;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsTimestampField_OutputOnly {
+    @extend .DdsTimestampField;
+    border: none;
+}
+
+.DdsTimestampField_Link {
+    @extend .DdsTimestampField;
+    border: none;
+}

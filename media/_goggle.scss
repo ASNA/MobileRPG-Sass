@@ -1,0 +1,34 @@
+﻿@import "..\_config";
+
+$google-feature-device-width: device-width;
+$google-feature-device-height: device-height;
+$google-feature-device-pixel-ratio: -webkit-device-pixel-ratio;
+$google-feature-orientation: orientation;
+
+$google-nexus-7-value-device-pixel-ratio: 1.30;
+$google-nexus-7-value-device-width: 961px;
+$google-nexus-7-value-device-height: 552px;
+
+/* --- Samsung Nexus 7 [Portrait] --- */
+@media only screen 
+    and ($google-feature-device-pixel-ratio: $google-nexus-7-value-device-pixel-ratio) 
+    and ($google-feature-device-width: $google-nexus-7-value-device-width ) 
+    and ($google-feature-device-height:$google-nexus-7-value-device-height)
+    and ($google-feature-orientation: portrait) {
+    .DdsBar {
+        /* Increse height to improve Touch experience. */
+        min-height: $dds-bar-min-height + 1em; 
+    }
+}
+
+/* --- Samsung Nexus 7 [Landscape] --- */
+@media only screen 
+    and ($google-feature-device-pixel-ratio: $google-nexus-7-value-device-pixel-ratio) 
+    and ($google-feature-device-width: $google-nexus-7-value-device-width ) 
+    and ($google-feature-device-height:$google-nexus-7-value-device-height)
+    and ($google-feature-orientation: landscape) {
+    .DdsBar {
+        /* Increse height to improve Touch experience. */
+        min-height: $dds-bar-min-height + 1em; 
+    }
+}

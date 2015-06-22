@@ -1,0 +1,36 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsDateField
+   ========================================================================== */
+
+.DdsDateField {
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+}
+
+.DdsDateField_Error {
+    @extend .DdsDateField;
+	color: $dds-field-error-color;
+	background-color: $dds-field-error-background-color;
+}
+
+.DdsDateField_OutputOnly {
+    @extend .DdsDateField;
+    border: none;
+}
+
+.DdsDateField_Right {
+    @extend .DdsDateField;
+    text-align: right;
+}
+
+.DdsDateField_Right_Error {
+    @extend .DdsDateField_Error;
+    text-align: right;
+}
+
+.DdsDateField_Right_OutputOnly {
+    @extend .DdsDateField;
+    border: none;
+}

@@ -1,0 +1,61 @@
+﻿@import "..\_config";
+@import "..\mixins\_ddscommon";
+@import "..\mixins\_ddspanel";
+@import "..\mixins\_ddsbar";
+
+//
+//  "Regular Height" devices, such as Apple iPad have sufficent height, that we need
+//  to increase the hight and adjust the fonts accordingly.
+//
+//  This implementation follows recommendations provided by Apple in their 
+//  "iOS Human Interface Guidelines", "Adaptivity and Layout" topic, as described
+//  by the document:
+//
+//  https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html#//apple_ref/doc/uid/TP40006556-CH54-SW1
+//
+//
+
+.DdsConstant {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+}
+
+.DdsCharField {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+}
+
+.DdsDecField {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+}
+
+.DdsDecDateField {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+} 
+
+.DdsTimeField {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+}
+
+.DdsTimestampField {
+    @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+}
+
+.DdsBar {
+    min-height: $regular-dds-bar-min-height;
+}
+
+.PanelTitle, .PanelTitle_OutputOnly {
+    @include panel-titile($regular-dds-panel-title-font-size, $dds-panel-title-color, $dds-panel-title-white-space, $dds-panel-title-vertical-align, $regular-dds-panel-title-line-height, $dds-panel-title-text-align);
+}
+
+.NavButton { /* Short text should have a min. width to be touchable */
+    @include nav-bar(auto, $regular-nav-button-margin-top, hidden, ellipsis, none, $nav-button-text-align, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align, $regular-nav-button-touchable-min-width );
+}
+
+.NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+    @extend .NavButton;
+    min-width: $regular-nav-button-touchable-narrow-min-width;
+}
+
+.SubmitButton {
+    @include submit-button($regular-submit-button-font-size, $regular-submit-button-height, $nav-button-touchable-min-width, $submit-button-color)
+}

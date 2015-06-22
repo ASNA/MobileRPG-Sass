@@ -1,0 +1,23 @@
+﻿@mixin nav-bar($width, $margin-top, $overflow, $text-overflow, $text-decoration, $text-align, $white-space, $color, $vertical-align, $min-width ) {
+    width: $width;
+    margin-top: $margin-top;
+    overflow: $overflow;
+    -ms-text-overflow: $text-overflow;
+    -o-text-overflow: $text-overflow;
+    text-overflow: $text-overflow;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+    white-space: $white-space;
+    color: $color;
+    vertical-align: $vertical-align;
+    min-width: $min-width;
+}
+
+@mixin submit-button($font-size, $height, $min-width, $color) {
+    font-size: $font-size;
+    height: $height;
+    min-width: $min-width;
+    color: $color;
+}
+
+

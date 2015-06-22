@@ -1,0 +1,119 @@
+﻿@import "..\_config";
+
+$safari-feature-device-width: device-width;
+$safari-feature-device-height: device-height;
+$safari-feature-device-pixel-ratio: -webkit-device-pixel-ratio;
+$safari-feature-orientation: orientation;
+
+$iphone-6plus-value-device-width: 414px;
+$iphone-6plus-value-device-height: 736px;
+$iphone-6plus-value-device-pixel-ratio: 3;
+
+$iphone-6-value-device-width: 375px;
+$iphone-6-value-device-height: 667px;
+$iphone-6-value-device-pixel-ratio: 2;
+
+$iphone-5-value-device-width: 320px;
+$iphone-5-value-device-height: 568px;
+$iphone-5-value-device-pixel-ratio: 2;
+
+$ipad2-ipad-mini-non-retina-value-device-width: 1024px;
+$ipad2-ipad-mini-non-retina-value-device-height: 768px;
+$ipad2-ipad-mini-non-retina-value-device-pixel-ratio: 1;
+
+$ipad-retina-value-device-width: 1024px;
+$ipad-retina-value-device-height: 768px;
+$ipad-retina-value-device-pixel-ratio: 2;
+
+// /* --- Apple iPhone 6 Plus [Portrait] --- */
+// @media only screen 
+//    and ($safari-feature-device-pixel-ratio: $iphone-6plus-value-device-pixel-ratio) 
+//    and ($safari-feature-device-width: $iphone-6plus-value-device-width ) 
+//    and ($safari-feature-device-height: $iphone-6plus-value-device-height)
+//    and ($safari-feature-orientation: portrait) {
+//
+//}
+
+// /* --- Apple iPhone 6 Plus [Landscape] --- */
+// @media only screen 
+//     and ($safari-feature-device-pixel-ratio: $iphone-6plus-value-device-pixel-ratio) 
+//     and ($safari-feature-device-width: $iphone-6plus-value-device-width ) 
+//     and ($safari-feature-device-height: $iphone-6plus-value-device-height)
+//     and ($safari-feature-orientation: landscape) {
+//     .DdsBar {
+//         /* Increse height to improve Touch experience. */
+//         min-height: $dds-bar-min-height + 1em; 
+//     }
+// }
+
+// /* --- Apple iPhone 6 [Portrait] --- */
+// @media only screen 
+//     and ($safari-feature-device-pixel-ratio: $iphone-6-value-device-pixel-ratio) 
+//     and ($safari-feature-device-width: $iphone-6-value-device-width ) 
+//     and ($safari-feature-device-height: $iphone-6-value-device-height)
+//     and ($safari-feature-orientation: portrait) {
+//
+// }
+
+// /* --- Apple iPhone 6 [Landscape] --- */
+// @media only screen 
+//     and ($safari-feature-device-pixel-ratio: $iphone-6-value-device-pixel-ratio) 
+//     and ($safari-feature-device-width: $iphone-6-value-device-width ) 
+//     and ($safari-feature-device-height: $iphone-6-value-device-height)
+//     and ($safari-feature-orientation: landscape) {
+//
+// }
+
+// /* --- Apple iPhone 5 and 5s [Portrait] --- */
+// @media only screen 
+//     and ($safari-feature-device-pixel-ratio: $iphone-5-value-device-pixel-ratio) 
+//     and ($safari-feature-device-width: $iphone-5-value-device-width ) 
+//     and ($safari-feature-device-height: $iphone-5-value-device-height)
+//     and ($safari-feature-orientation: portrait) {
+//
+// }
+
+// /* --- Apple iPhone 5 and 5s [Landscape] --- */
+// @media only screen 
+//     and ($safari-feature-device-pixel-ratio: $iphone-5-value-device-pixel-ratio) 
+//     and ($safari-feature-device-width: $iphone-5-value-device-width ) 
+//     and ($safari-feature-device-height: $iphone-5-value-device-height)
+//     and ($safari-feature-orientation: landscape) {
+//
+// }
+
+/* --- Apple iPad 2 and iPad mini (non-retina) [Portrait] --- */
+@media only screen 
+  and ($safari-feature-device-pixel-ratio: $ipad2-ipad-mini-non-retina-value-device-pixel-ratio)
+  and ($safari-feature-device-width: $ipad2-ipad-mini-non-retina-value-device-width) 
+  and ($safari-feature-device-height: $ipad2-ipad-mini-non-retina-value-device-height)     
+  and ($safari-feature-orientation: portrait) {
+    @import "_regularheight";
+}
+
+/* --- Apple iPad 2 and iPad mini (non-retina) [Landscape] --- */
+@media only screen 
+  and ($safari-feature-device-pixel-ratio: $ipad2-ipad-mini-non-retina-value-device-pixel-ratio)
+  and ($safari-feature-device-width: $ipad2-ipad-mini-non-retina-value-device-width) 
+  and ($safari-feature-device-height: $ipad2-ipad-mini-non-retina-value-device-height)     
+  and ($safari-feature-orientation: landscape) {
+    @import "_regularheight";
+}
+
+/* --- Apple Retina (iPad 3, iPad 4, iPad mini) [Portrait] --- */
+@media only screen 
+  and ($safari-feature-device-pixel-ratio: $ipad-retina-value-device-pixel-ratio)
+  and ($safari-feature-device-width: $ipad-retina-value-device-width) 
+  and ($safari-feature-device-height: $ipad-retina-value-device-height)     
+  and ($safari-feature-orientation: portrait) {
+    @import "_regularheight";
+}
+
+/* --- Apple Retina (iPad 3, iPad 4, iPad mini) [Landscape] --- */
+@media only screen 
+  and ($safari-feature-device-pixel-ratio: $ipad-retina-value-device-pixel-ratio)
+  and ($safari-feature-device-width: $ipad-retina-value-device-width) 
+  and ($safari-feature-device-height: $ipad-retina-value-device-height)     
+  and ($safari-feature-orientation: landscape) {
+    @import "_regularheight";
+}
