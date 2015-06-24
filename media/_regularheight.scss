@@ -25,6 +25,7 @@
 
 .DdsDecField {
     @include dds-field($regular-dds-font-family, $regular-dds-font-size, $regular-dds-input-field-height, none, $regular-dds-padding);
+    text-align: right; 
 }
 
 .DdsDecDateField {
@@ -48,7 +49,10 @@
 }
 
 .NavButton { /* Short text should have a min. width to be touchable */
-    @include nav-bar(auto, $regular-nav-button-margin-top, hidden, ellipsis, none, $nav-button-text-align, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align, $regular-nav-button-touchable-min-width );
+    @include nav-button($nav-button-width, $regular-nav-button-touchable-min-width, $nav-button-height, $nav-button-padding, $regular-nav-button-margin-top, 
+                        $nav-button-border, $nav-button-line-height, $nav-button-font-family, $nav-button-font-size, $nav-button-font-weight, 
+                        $nav-button-overflow, $nav-button-text-overflow, $nav-button-text-decoration, $nav-button-text-align, 
+                        $nav-button-text-shadow, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
 }
 
 .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
@@ -57,5 +61,5 @@
 }
 
 .SubmitButton {
-    @include submit-button($regular-submit-button-font-size, $regular-submit-button-height, $nav-button-touchable-min-width, $submit-button-color)
+    @include submit-button($regular-submit-button-font-size, $submit-button-font-weight, $regular-submit-button-height, $nav-button-touchable-min-width, $submit-button-color)
 }

@@ -1,7 +1,7 @@
 ﻿// ==========================================================================
 //   Framework.css
 // ========================================================================== 
-$dds-font-family: 'Lucida Sans Typewriter'; 
+$dds-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
 $dds-font-size: 13px;
 $dds-padding: 0;
 $dds-input-field-border-color: #c0c0c0;
@@ -52,6 +52,9 @@ $dds-calendar-ex-date-cell-color: #cdcdcd;
 
 // ddsBar
 $dds-bar-min-height: 2.8em;
+$dds-bar-background-color: maroon;
+$dds-bar-background-image: webkit-linear-gradient(#800000, #cc0000);
+$nav-button-width: auto;
 $nav-button-margin-top: 0.2em;
 $nav-button-text-align: center;
 $nav-button-white-space: nowrap;
@@ -59,8 +62,26 @@ $nav-button-color: #fff;
 $nav-button-vertical-align: middle;
 $nav-button-touchable-min-width: 4em;
 $nav-button-touchable-narrow-min-width: 3em;
+$nav-button-border-radius: 6px;
+$nav-button-height: 2.8em;
+$nav-button-padding: 0 5px;
+$nav-button-border: 1px solid #45505d;
+$nav-button-line-height: 28px;
+$nav-button-font-family: inherit;
+$nav-button-font-size: 0.8em;
+$nav-button-font-weight: bold;
+$nav-button-overflow: hidden;
+$nav-button-text-overflow: ellipsis;
+$nav-button-text-decoration: none;
+$nav-button-text-shadow: rgba(0, 0, 0, 0.6) 0 -1px 0;
+$nav-button-background-color-start: #8ea4c1;
+$nav-button-background-color-stop: #4a6c9b;
 $submit-button-font-size: 0.8em;
+$submit-button-font-weight: bold;
 $submit-button-color: white;
+$submit-button-border-radius: 6px;
+$submit-button-background-color-start: #3ead7b;
+$submit-button-background-color-stop:  #17754B;
 
 // ddsPanel
 $dds-panel-title-font-size: 1em;
