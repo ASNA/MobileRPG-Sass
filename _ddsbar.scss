@@ -11,7 +11,7 @@
     min-height: $dds-bar-min-height;
     z-index: $top-most-layer;
     background-color: $dds-bar-background-color;
-    background-image: $dds-bar-background-image;
+    @include linear-gradient($dds-bar-background-color-start,$dds-bar-background-color-stop);
 }
 
 .NavButton { /* Short text should have a min. width to be touchable */
