@@ -18,5 +18,5 @@ fieldset {
 }
 
 .PanelTitle, .PanelTitle_OutputOnly {
-    @include panel-titile($dds-panel-title-font-size, $dds-panel-title-color, $dds-panel-title-white-space, $dds-panel-title-vertical-align, $dds-panel-title-line-height, $dds-panel-title-text-align);
+    @include panel-title($dds-panel-title-font-size, $dds-panel-title-color, $dds-panel-title-white-space, $dds-panel-title-vertical-align, $dds-panel-title-line-height, $dds-panel-title-text-align);
 }

@@ -1,4 +1,4 @@
-﻿@mixin panel-titile($font-size, $title-color, $white-space, $vertical-align, $line-height, $text-align) {
+﻿@mixin panel-title($font-size, $title-color, $white-space, $vertical-align, $line-height, $text-align) {
     font-size: $font-size;
     color: $title-color;
     white-space: $white-space;

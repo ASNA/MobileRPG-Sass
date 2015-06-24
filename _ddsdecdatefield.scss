@@ -6,7 +6,7 @@
    ========================================================================== */
 
 .DdsDecDateField {
-    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-border, $dds-input-field-margin,  $dds-padding);
 } 
 
 .DdsDecDateField_Right {
@@ -31,7 +31,7 @@
    to Web Form Designer onto a non-absolute containter.     
    ========================================================================== */
 .DdsDecDateFieldNonAbsolute {
-    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-border, $dds-input-field-margin, $dds-padding);
     width: $dds-date-field-non-absolute-width;
 }
 

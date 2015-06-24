@@ -6,7 +6,7 @@
    ========================================================================== */
 
 .DdsDecField {
-    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-border, $dds-input-field-margin, $dds-padding);
     text-align: right; 
 }
 

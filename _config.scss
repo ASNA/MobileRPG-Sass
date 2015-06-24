@@ -5,7 +5,7 @@ $dds-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans,
 $dds-font-size: 13px;
 $dds-padding: 0;
 $dds-input-field-border-color: #c0c0c0;
-$dds-input-field-height:  $dds-font-size + 7px;
+$dds-input-field-margin: 2px 0 0 0;
 $dds-input-field-border: 1px solid $dds-input-field-border-color;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
@@ -201,7 +201,7 @@ $url-subfile-scrollbar-down-background-image: url(../Images/SBDn.png);
 $regular-dds-font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 $regular-dds-font-size: $dds-font-size + 5px;
 $regular-dds-padding: $dds-padding + 2px;
-$regular-dds-input-field-height: $dds-input-field-height + 5px;
+$regular-dds-input-field-margin: 4px 0 0 0;
 $regular-dds-bar-min-height: $dds-bar-min-height + 1em;
 $regular-dds-panel-title-font-size: $dds-panel-title-font-size + 0.5em;
 $regular-dds-panel-title-line-height: $dds-panel-title-line-height + 0.4em;

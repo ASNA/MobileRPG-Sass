@@ -6,7 +6,7 @@
    ========================================================================== */
 
 .DdsConstant {
-    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, none, $dds-padding);
+    @include dds-field($dds-font-family, $dds-font-size, none, 0, $dds-padding);
 }
 
 .DdsConstant_Right  {
