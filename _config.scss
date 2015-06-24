@@ -85,8 +85,13 @@ $submit-button-background-color-start: #3ead7b;
 $submit-button-background-color-stop:  #17754B;
 
 // ddsPanel
-$dds-panel-title-font-size: 1em;
+$dds-panel-padding: 2px;
+$dds-panel-border: 2px solid gray;
+$dds-panel-border-radius: 10px;
 $dds-panel-background-color: white;
+
+
+$dds-panel-title-font-size: 1em;
 $dds-panel-title-color: white;
 $dds-panel-title-white-space: nowrap;
 $dds-panel-title-vertical-align: middle;
