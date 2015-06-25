@@ -2,6 +2,7 @@
 @import "..\mixins\_ddscommon";
 @import "..\mixins\_ddspanel";
 @import "..\mixins\_ddsbar";
+@import "..\mixins\_ddsignature";
 
 //
 //  "Regular Height" devices, such as Apple iPad have sufficent device height, that we need
@@ -49,8 +50,8 @@
 }
 
 .NavButton { /* Short text should have a min. width to be touchable */
-    @include nav-button($nav-button-width, $regular-nav-button-touchable-min-width, $nav-button-height, $nav-button-padding, $regular-nav-button-margin-top, 
-                        $nav-button-border, $nav-button-line-height, $nav-button-font-family, $nav-button-font-size, $nav-button-font-weight, 
+    @include nav-button($nav-button-width, $regular-nav-button-touchable-min-width, $regular-nav-button-height, $nav-button-padding, $regular-nav-button-margin-top, 
+                        $nav-button-border, $nav-button-line-height, $nav-button-font-family, $regular-nav-button-font-size, $nav-button-font-weight, 
                         $nav-button-overflow, $nav-button-text-overflow, $nav-button-text-decoration, $nav-button-text-align, 
                         $nav-button-text-shadow, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
 }
@@ -62,4 +63,25 @@
 
 .SubmitButton {
     @include submit-button($regular-submit-button-font-size, $submit-button-font-weight, $regular-submit-button-height, $nav-button-touchable-min-width, $submit-button-color)
+}
+
+.DdsSignLink {
+    font-size: $regular-dds-sign-link-font-size;
+}
+
+.DdsSignEditorTitle {
+    @include sign-editor-title( none, 0, $dds-sign-editor-title-margin-top, $dds-sign-editor-title-text-align, $regular-dds-sign-editor-title-font-size, $dds-sign-editor-title-font-weight );
+}
+
+.DdsSignCancelButton, .DdsSignDoneButton, .DdsSignEraseButton {
+    @include signature-button($regular-dds-sign-buttons-margin,0,none, $regular-dds-sign-buttons-font-size, $dds-sign-buttons-color,$dds-sign-buttons-background-color);
+}
+
+.DdsSignCancelButton {
+    color: orangered;
+}
+
+.DdsSignDoneButton {
+    font-weight: bold;
+    color: yellow;
 }

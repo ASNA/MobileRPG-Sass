@@ -205,11 +205,17 @@ $regular-dds-input-field-margin: 4px 0 0 0;
 $regular-dds-bar-min-height: $dds-bar-min-height + 1em;
 $regular-dds-panel-title-font-size: $dds-panel-title-font-size + 0.5em;
 $regular-dds-panel-title-line-height: $dds-panel-title-line-height + 0.4em;
-$regular-nav-button-margin-top: $nav-button-margin-top + 0.4em;
+$regular-nav-button-height: $nav-button-height + 0.5em;
+$regular-nav-button-margin-top: 0;
+$regular-nav-button-font-size: $nav-button-font-size + 0.5em;
 $regular-nav-button-touchable-min-width: $nav-button-touchable-min-width + 0.5em;
 $regular-nav-button-touchable-narrow-min-width: $nav-button-touchable-narrow-min-width + 0.5em;
 $regular-submit-button-font-size: $submit-button-font-size + 0.5em;
 $regular-submit-button-height: $dds-bar-min-height + 0.5em;
+$regular-dds-sign-link-font-size: 20px;
+$regular-dds-sign-buttons-margin: 0.8em 1em 1em 1em;
+$regular-dds-sign-buttons-font-size: $dds-sign-buttons-font-size + 0.5em;
+$regular-dds-sign-editor-title-font-size: $dds-sign-editor-title-font-size + 0.5em;
 
 // ==========================================================================
 //   Theme.css

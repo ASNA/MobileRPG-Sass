@@ -1,4 +1,5 @@
 ﻿@import "_config";
+@import "mixins/_ddsignature";
 
 /* ==========================================================================
    ddsSignature
@@ -24,21 +25,11 @@
 }
 
 .DdsSignEditorTitle {
-    border: none;
-    padding: 0;
-    margin-top: $dds-sign-editor-title-margin-top;
-    text-align: $dds-sign-editor-title-text-align;
-    font-size: $dds-sign-editor-title-font-size;
-    font-weight: $dds-sign-editor-title-font-weight;
+    @include sign-editor-title( none, 0, $dds-sign-editor-title-margin-top, $dds-sign-editor-title-text-align, $dds-sign-editor-title-font-size, $dds-sign-editor-title-font-weight );
 }
 
 .DdsSignCancelButton, .DdsSignDoneButton, .DdsSignEraseButton {
-    margin: $dds-sign-buttons-margin;
-    padding: 0;
-    border: none;
-    color: $dds-sign-buttons-color;
-    font-size: $dds-sign-buttons-font-size;
-    background-color: $dds-sign-buttons-background-color;
+    @include signature-button($dds-sign-buttons-margin,0,none,$dds-sign-buttons-font-size,$dds-sign-buttons-color,$dds-sign-buttons-background-color);
 }
 
 .DdsSignCancelButton {
