@@ -53,7 +53,7 @@
     @include nav-button($nav-button-width, $regular-nav-button-touchable-min-width, $regular-nav-button-height, $nav-button-padding, $regular-nav-button-margin-top, 
                         $nav-button-border, $nav-button-line-height, $nav-button-font-family, $regular-nav-button-font-size, $nav-button-font-weight, 
                         $nav-button-overflow, $nav-button-text-overflow, $nav-button-text-decoration, $nav-button-text-align, 
-                        $nav-button-text-shadow, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
+                        $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
 }
 
 .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
@@ -84,4 +84,9 @@
 .DdsSignDoneButton {
     font-weight: bold;
     color: yellow;
+}
+
+/* ddsPanel */
+fieldset {
+    font-size: $regular-dds-panel-fieldset-font-size;
 }

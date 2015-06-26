@@ -18,7 +18,7 @@
     @include nav-button($nav-button-width, $nav-button-touchable-min-width, $nav-button-height, $nav-button-padding, $nav-button-margin-top, 
                         $nav-button-border, $nav-button-line-height, $nav-button-font-family, $nav-button-font-size, $nav-button-font-weight, 
                         $nav-button-overflow, $nav-button-text-overflow, $nav-button-text-decoration, $nav-button-text-align, 
-                        $nav-button-text-shadow, $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
+                        $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
     @include border-radius($nav-button-border-radius);
     @include linear-gradient($nav-button-background-color-start,$nav-button-background-color-stop);
 }
