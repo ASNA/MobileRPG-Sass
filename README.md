@@ -31,7 +31,7 @@ When your Mobile RPG site is complete, you may want to review the list of ASNA W
 
 ## Installation
 
-1. Locate the the "Download ZIP" button on this page.
+1. Locate the "Download ZIP" button on this page.
 2. Click on the "Download ZIP" button.
 3. Save the file in a temporary folder on your PC.
 4. Extract the files in the downloaded zip file.
