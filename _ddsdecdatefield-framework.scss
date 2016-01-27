@@ -1,0 +1,70 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsDecDateField
+   ========================================================================== */
+
+.DdsDecDateField {
+    border: $dds-input-field-border;
+    // border-color: $dds-input-field-border-color;
+    margin: $dds-input-field-margin;
+    // padding: $dds-padding;
+} 
+
+.DdsDecDateField_Right {
+    @extend .DdsDecDateField;
+    text-align: right;
+}
+
+//.DdsDecDateField_Error {
+//    @extend .DdsDecDateField;
+//    color: $dds-field-error-color;
+//    background-color: $dds-field-error-background-color;
+//}
+
+.DdsDecDateField_OutputOnly {
+    @extend .DdsDecDateField;
+    border: none;
+}
+
+// The following are Framework-only CSSs, we make an exception to the color rule (that normally goes into Theme.css
+
+/*
+   DdsDecDateFieldNonAbsolute (with their _Right_XXX and _OutputOnly appended
+   class names) are used by the Toolbox icon, when dragging and dropping
+   to Web Form Designer onto a non-absolute containter.     
+   ========================================================================== */
+.DdsDecDateFieldNonAbsolute {
+    border: $dds-input-field-border;
+    border-color: $dds-input-field-border-color;
+    margin: $dds-input-field-margin;
+    padding: $dds-padding;
+    width: $dds-date-field-non-absolute-width;
+}
+
+.DdsDecDateFieldNonAbsolute_Error {
+    @extend .DdsDecDateFieldNonAbsolute;
+	color: $dds-field-error-color;
+	background-color: $dds-field-error-background-color;
+}
+
+.DdsDecDateFieldNonAbsolute_OutputOnly {
+    @extend .DdsDecDateFieldNonAbsolute;
+    border: none;
+}
+
+.DdsDecDateFieldNonAbsolute_Right {
+    @extend .DdsDecDateFieldNonAbsolute;
+    text-align: right;
+}
+
+.DdsDecDateFieldNonAbsolute_Right_Error {
+    @extend .DdsDecDateFieldNonAbsolute_Error;
+    text-align: right;
+}
+
+.DdsDecDateFieldNonAbsolute_Right_OutputOnly {
+    @extend .DdsDecDateFieldNonAbsolute_Right;
+    border: none;
+}

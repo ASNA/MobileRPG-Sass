@@ -6,23 +6,23 @@
    ========================================================================== */
 
 .DdsTimestampField {
-    // border: $dds-input-field-border;
-    // margin: $dds-input-field-margin;
-    // padding: $dds-padding;
+    border: $dds-input-field-border;
+    margin: $dds-input-field-margin;
+    padding: $dds-padding;
 }
 
 .DdsTimestampField_Error {
-    @extend .DdsTimestampField;
-    color: $dds-field-error-color;
-    background-color: $dds-field-error-background-color;
+    // @extend .DdsTimestampField;
+    // color: $dds-field-error-color;
+    // background-color: $dds-field-error-background-color;
 }
 
 .DdsTimestampField_OutputOnly {
-    // @extend .DdsTimestampField;
-    // border: none;
+    @extend .DdsTimestampField;
+    border: none;
 }
 
 .DdsTimestampField_Link {
-    // @extend .DdsTimestampField;
-    // border: none;
+    @extend .DdsTimestampField;
+    border: none;
 }

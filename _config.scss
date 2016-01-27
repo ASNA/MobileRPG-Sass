@@ -1,17 +1,35 @@
 ﻿// ==========================================================================
 //   Framework.css
 // ========================================================================== 
-$dds-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
-$dds-font-size: 13px;
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 14px;
+$font-size-small: ($font-size-base * 0.57);
+
+$dds-font-family: $font-family-base;
+$dds-font-size: 14px;
 $dds-padding: 0;
 $dds-input-field-border-color: #c0c0c0;
 $dds-input-field-margin: 2px 0 0 0;
-$dds-input-field-border: 1px solid $dds-input-field-border-color;
+$dds-input-field-border: 1px solid;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
 
+$selection-background-color: #aaa;
+$selection-color: white;
+$selection-text-shadow: none;
+$links-color:  #06c;
+
+$body-margin: 0;
+$body-margin-left: 0.5em;
+$body-margin-right: 0.5em;
+
+$std-box-border-radius: 3px;
+
 // ddsDateField
-$dds-date-field-non-absolute-width: 70% /* input text 70%, button 30% of parent DIV */;
+$dds-date-field-non-absolute-width: 70%; // input text 70%, button 30% of parent DIV
 
 // ddsSubfile
 $dds-subfile-width: 100%;
@@ -29,15 +47,77 @@ $dds-subfile-moreless-height: 32px;
 $dds-subfile-moreless-background-color: white;
 $dds-subfile-moreless-color: blue;
 
+// ddsSwitch
+$dds-switch-label-display: inline-block;
+$dds-switch-label-height: 2em;
+$dds-switch-label-width: 7em;
+$dds-switch-label-focus-text-shadow-and-color: 2px 2px 2px rgba(150, 150, 150, 1);
+$dds-switch-border: 0.1em solid;
+$dds-switch-border-color: #444;
+$dds-switch-display: inline-block;
+$dds-switch-width: 5em;
+$dds-switch-height: 2em;
+$dds-switch-vertical-align: middle;
+$dds-switch-overflow: hidden;
+$dds-switch-cursor: pointer;
+$dds-switch-border-radius: 1.1em;
+$dds-switch-user-select: none;
+$dds-switch-tap-highlight-color: rgba(0, 0, 0, 0); 
+$dds-switch-wrapper-child-display: block;
+$dds-switch-wrapper-child-float: left;
+$dds-switch-wrapper-child-height: 2em;
+$dds-switch-wrapper-child-line-height: 2em;
+$dds-switch-wrapper-child-box-shadow-and-color :inset 0 0.2em 0.4em rgba(0, 0, 0, 0.75);
+$dds-switch-child-display: block;
+$dds-switch-child-width: 8em;
+$dds-switch-child-height: 2em;
+$dds-switch-child-color: #fff;
+$dds-switch-child-overflow: hidden;
+$dds-switch-child-text-shadow-and-color: 0 -0.1em 0 rgba(0, 0, 0, 0.8);
+$dds-switch-child-filter: dropshadow(color=#000000, offx=0, offy=-1);
+$dds-switch-child-border-radius: 1em;
+$dds-switch-wrapper-toggleSwitch-on-background-color: #0b0;
+$dds-switch-wrapper-toggleSwitch-on-width: 3em;
+$dds-switch-wrapper-toggleSwitch-on-padding-left: 1em;
+$dds-switch-wrapper-toggleSwitch-on-border-radius: 0.8em 0 0 0.8em;
+$dds-switch-wrapper-toggleSwitch-off-background-color: #b00;
+$dds-switch-wrapper-toggleSwitch-off-width: 3em;
+$dds-switch-wrapper-toggleSwitch-off-padding-right: 1em;
+$dds-switch-wrapper-toggleSwitch-off-text-align: right;
+$dds-switch-wrapper-toggleSwitch-off-border-radius: 0 0.8em 0.8em 0;
+$dds-switch-wrapper-toggleSwitch-handle-background: #eee;
+$dds-switch-wrapper-toggleSwitch-handle-background-gradient-from-color: #eee;
+$dds-switch-wrapper-toggleSwitch-handle-background-gradient-to-color: #aaa;   
+$dds-switch-wrapper-toggleSwitch-handle-width: 2em;
+$dds-switch-wrapper-toggleSwitch-handle-margin-left: -5em;
+$dds-switch-wrapper-toggleSwitch-handle-box-shadow-and-color: 0 0.15em 0.4em #000;
+$dds-switch-wrapper-toggleSwitch-handle-border: 0.1em solid;
+$dds-switch-wrapper-toggleSwitch-handle-border-color:  #999;
+$dds-switch-wrapper-toggleSwitch-handle-border-radius: 0.99em;
+$dds-switch-wrapper-toggleSwitch-handle-box-sizing : border-box;
+$dds-switch-swipe-right-margin-left: 0;
+$dds-switch-swipe-left-margin-left: -3em;
+$dds-switch-render-as-checkbox-display: inline-block;
+$dds-switch-render-as-checkbox-width: 5em;
+$dds-switch-render-as-checkbox-height: 2em;
+$dds-switch-render-as-checkbox-vertical-align: middle;
+$dds-switch-render-as-checkbox-overflow: hidden;
+$dds-switch-render-as-checkbox-cursor: pointer;
+$dds-switch-render-as-checkbox-user-select: none;
+$dds-switch-render-as-checkbox-tap-highlight-color: rgba(0, 0, 0, 0);
+$dds-switch-render-as-checkbox-wrapper-display: block;
+$dds-switch-render-as-checkbox-wrapper-float: left;
+$dds-switch-render-as-checkbox-wrapper-height: 2em;
+$dds-switch-render-as-checkbox-wrapper-line-height: 2em;
+
 // Calendar
 $dds-calendar-font-family: 'Trebuchet MS', Arial, Tahoma, Sans-serif;
-$dds-calendar-font-size: 8px;
+$dds-calendar-small-font-size: $font-size-small;
+$dds-calendar-font-size: 11px;
 $dds-calendar-color: black;
 $dds-calendar-background-color: #99ccff;
 $dds-calendar-width: 180px;
 $dds-calendar-height: 140px;
-$dds-calendar-close-cell-font-size: 11px;
-$dds-calendar-title-font-size: 11px;
 $dds-calendar-title-color: white;
 $dds-calendar-date-cell-color: black;
 $dds-calendar-date-cell-background-color: #86aed7;
@@ -60,10 +140,11 @@ $nav-button-margin-top: 0.2em;
 $nav-button-text-align: center;
 $nav-button-white-space: nowrap;
 $nav-button-color: #fff;
+$nav-button-background-color: orangered;
 $nav-button-vertical-align: middle;
 $nav-button-touchable-min-width: 4em;
 $nav-button-touchable-narrow-min-width: 3em;
-$nav-button-border-radius: 6px;
+$nav-button-border-radius: $std-box-border-radius;
 $nav-button-height: 2.8em;
 $nav-button-padding: 0 5px;
 $nav-button-border: 1px solid #ed6c45;
@@ -79,15 +160,16 @@ $nav-button-background-color-stop: #cc6600;
 $submit-button-font-size: 0.8em;
 $submit-button-font-weight: bold;
 $submit-button-color: white;
-$submit-button-border-radius: 6px;
+$submit-button-border-radius: $std-box-border-radius;
 $submit-button-background-color-start: #3ead7b;
 $submit-button-background-color-stop:  #17754B;
 
 // ddsPanel
 $dds-panel-fieldset-font-size: 1.2em;
 $dds-panel-padding: 2px;
-$dds-panel-border: 2px solid gray;
-$dds-panel-border-radius: 10px;
+$dds-panel-border: 2px solid;
+$dds-panel-border-color: gray;
+$dds-panel-border-radius: $std-box-border-radius;
 $dds-panel-background-color: white;
 
 $dds-panel-title-font-size: 1em;
@@ -102,8 +184,9 @@ $dds-list-list-left: 2%;
 $dds-list-list-padding: 2px;
 $dds-list-list-width: 96%;
 $ddslistlist-background-color: white;
-$dds-list-list-border-radius: 10px;
-$dds-list-list-border: 2px solid black;
+$dds-list-list-border-radius: $std-box-border-radius;
+$dds-list-list-border: 2px solid;
+$dds-list-list-border-color: black;
 $dds-list-image-width: 64px;
 $dds-list-image-height: 64px;
 $dds-list-chevron-padding-left: 16px;
@@ -112,11 +195,13 @@ $dds-list-chevron-padding-right: 16px;
 // ddsChart
 $dds-chart-panel-margin-left: 0.2em;
 $dds-chart-panel-margin-right: 0.2em;
-$dds-chart-panel-border: 0.1em solid black;
+$dds-chart-panel-border: 0.1em solid;
+$dds-chart-panel-border-color: black;
 
 // ddsSignature
-$dds-signature-border: 1px dotted #c0c0c0;
-$dds-signature-border-radius: 6px;
+$dds-signature-border: 1px dotted;
+$dds-signature-border-color: #c0c0c0;
+$dds-signature-border-radius: $std-box-border-radius;
 $dds-signature-margin-left: 2%;
 $dds-signature-width: 95%; 
 $dds-sign-link-right: 2%;
@@ -130,29 +215,62 @@ $dds-sign-buttons-margin: 1em 1em 1em 1em;
 $dds-sign-buttons-font-size: 0.8em;
 $dds-sign-buttons-background-color:  #48474F;
 $dds-sign-buttons-color: white;
+$dds-sign-button-cancel: orangered;
+$dds-sign-button-done: yellow;
+$dds-sign-button-done-weight: bold;
 
 // ddsImage
 $dds-image-choose-height: 2.5em;
 $dds-image-choose-font-size: 0.8em;
 $dds-image-upload-height: 2.5em;
 $dds-image-upload-color: white;
-$dds-image-upload-border-radius: 6px;
-$dds-image-upload-border: 1px solid rgb(180,223,91);
+$dds-image-upload-border-radius: $std-box-border-radius;
+$dds-image-upload-border: 1px solid ;
+$dds-image-upload-border-color: rgb(180,223,91);
 $dds-image-upload-linear-gradient-color-start: #4cff00;
 $dds-image-upload-linear-gradient-color-stop: green;
-$dds-image-upload-disabled-border: 1px solid gray;
-$dds-image-upload-disabled-border-radius: 6px;
+$dds-image-upload-disabled-border: 1px solid;
+$dds-image-upload-disabled-border-color: gray;
+$dds-image-upload-disabled-border-radius: $std-box-border-radius;
 $dds-image-upload-disabled-color: gray;
 $dds-image-upload-disabled-background-image: none;
 $dds-image-upload-disabled-background-color: white;
 $dds-image-upload-float: right;
 $dds-image-margin-left: 5px;
+$dds-image-navbar-opacity: 0.75;
+$dds-image-navbar-width: 50px;
+$dds-image-navbar-background-color: gray;
+$dds-image-imagetag-bottom: 10px;
+$dds-image-imagetag-width: 50px;
+$dds-image-imagetag-left: 50%;
+$dds-image-imagetag-background-color: black;
+$dds-image-imagetag-color: white;
+$dds-image-imagetag-text-align: center;
+$dds-image-imagetag-padding: 3px;
+$dds-image-imagetag-opacity: 0.6;
+$dds-image-imagetag-border-radius: $std-box-border-radius;
+$dds-image-fullscreen-background-color: black;
+$dds-image-fullscreen-imagetag-bottom: 10px;
+$dds-image-fullscreen-imagetag-width: 50px;
+$dds-image-fullscreen-imagetag-left: 50%;
+$dds-image-fullscreen-imagetag-background-color: black;
+$dds-image-fullscreen-imagetag-color: white;
+$dds-image-fullscreen-imagetag-text-align: center;
+$dds-image-fullscreen-imagetag-padding: 3px;
+$dds-image-fullscreen-imagetag-opacity: 0.6;
+$dds-image-fullscreen-imagetag-border-radius: $std-box-border-radius;
+$dds-image-fullscreen-close-button-top: 10px;
+$dds-image-fullscreen-close-button-right: 10px;
+$dds-image-fullscreen-close-button-width: 46px;
+$dds-image-fullscreen-close-button-height: 46px;
+$dds-image-fullscreen-navbar-width: 50px;
+$dds-image-fullscreen-navbar-background-color: black;
 
 // ddsTable
 $dds-table-font: normal 12px/150% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 $dds-table-background: white;
 $dds-table-border: 1px solid #800000;
-$dds-table-border-radius: 3px;
+$dds-table-border-radius: $std-box-border-radius;
 $dds-table-width: 100%;
 $dds-table-table-border-collapse: collapse;
 $dds-table-table-width: 100%;
@@ -169,17 +287,18 @@ $dds-table-table-thead-th-color: white;
 $dds-table-table-thead-th-charcolumn-text-align: left;
 $dds-table-table-thead-th-other-columns-text-align: right;
 $dds-table-table-thead-th-first-child-border: none;
+$dds-table-table-thead-th-iconcolumn-text-align: center;
 $dds-table-table-tbody-tr-dds-table-group-header-th-font-size: 13px;
 $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight: bold;
-$dds-table-table-tbody-tr-dds-table-group-header-th-border-left: 1px solid #a70000;
-$dds-table-table-tbody-tr-dds-table-group-header-th-background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $dds-table-table-thead-th-color-start), color-stop(1, $dds-table-table-thead-th-color-stop) );
-$dds-table-table-tbody-tr-dds-table-group-header-th-background-moz: -moz-linear-gradient( center top, $dds-table-table-thead-th-color-start 5%, $dds-table-table-thead-th-color-stop 100% );
-$dds-table-table-tbody-tr-dds-table-group-header-th-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000', endColorstr='#cc0000');
-$dds-table-table-tbody-tr-dds-table-group-header-th-background-color: $dds-table-table-thead-th-color-start;
+$dds-table-table-tbody-tr-dds-table-group-header-th-border-left: 1px solid;
+$dds-table-table-tbody-tr-dds-table-group-header-th-border-left-color: #a70000;
+$dds-table-table-tbody-tr-dds-table-group-header-th-background-color-start: $dds-table-table-thead-th-color-start;
+$dds-table-table-tbody-tr-dds-table-group-header-th-background-color-end: $dds-table-table-thead-th-color-stop;
 $dds-table-table-tbody-tr-dds-table-group-header-th-color: white;
-$dds-table-table-tbody-td-font-size: dds-table-table-thead-th-font-size - 3px;
+$dds-table-table-tbody-td-font-size: $dds-table-table-thead-th-font-size - 3px;
 $dds-table-table-tbody-td-font-weight: normal;
-$dds-table-table-tbody-td-border-left: 1px solid #f4eded;
+$dds-table-table-tbody-td-border-left: 1px solid;
+$dds-table-table-tbody-td-border-left-color:  #f4eded;
 $dds-table-table-tbody-td-color: black;
 $dds-table-table-tbody-td-charcolumn-text-align: left;
 $dds-table-table-tbody-td-other-columns-text-align: right;
@@ -192,7 +311,6 @@ $dds-table-table-tbody-tr-last-child-td-border-bottom: none;
 
 // Transparency
 $semi-transparency: 0.7;
-$semi-transparency-IE: $semi-transparency * 100; 
 
 // z-Index relative values
 $top-most-layer: 100;
@@ -200,6 +318,9 @@ $top-layer: 50;
 
 // Images
 $url-spinningwheel: url('../Images/SubmitWait.gif');
+$url-leftarrow: url('../Images/circle-arrow-left.png');
+$url-rightarrow: url('../Images/circle-arrow-right.png');
+$url-closex: url('../Images/circle-x.png');
 $url-subfile-scrollbar-background-image: url(../Images/SBBK.png); 
 $url-subfile-scrollbar-up-background-image: url(../Images/SBUp.png); 
 $url-subfile-scrollbar-down-background-image: url(../Images/SBDn.png);
@@ -225,39 +346,7 @@ $regular-dds-sign-buttons-font-size: $dds-sign-buttons-font-size + 0.5em;
 $regular-dds-sign-editor-title-font-size: $dds-sign-editor-title-font-size + 0.5em;
 $regular-dds-panel-fieldset-font-size: $dds-panel-fieldset-font-size + 0.5em;
 
-// ==========================================================================
-//   Theme.css
-// ========================================================================== 
-$html-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
-$html-text-size-adjust: 100%;
-$body-font-size: $dds-font-size;
-$body-margin: 0;
-$body-margin-left: 0.5em;
-$body-margin-right: 0.5em;
-$links-color:  #06c;
-$selection-background-color: #aaa;
-$selection-color: white;
-$selection-text-shadow: none;
-
-//  Layout
-$header-padding: 10px 0;
-$header-width: 960px;
-$header-logo-width: 512px;
-$header-logo-line-height: 0;
-$subfile-scrollbar-width: 20px;
-$drop-down-icon-width: 20px;
-$content-width: $header-width + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
-$main-content-width: 800px + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
-
-// Fkeys
-$function-keys-width: 160px;
-$function-keys-float: left;
-$dds-key-padding: 10px 10px;
-$dds-key-background-color: #f2f2f2;
-$dds-key-hover-background-color: #ddd;
-$dds-key-box-sizing: border-box;
-
-// Window record's layout
+// Window records
 $dds-window-background-color: gray;
 $dds-window-title-height:  $dds-font-size + 7px;
 $dds-window-title-color: white;
@@ -266,4 +355,16 @@ $dds-window-color: white;
 $dds-window-padding: 10px;
 $dds-window-display: inline-block;
 $dds-window-main-content-margin-right: 60px;
+$dds-inline-popup-background-position: absolute;
+$dds-inline-popup-background-top: 0;
+$dds-inline-popup-background-left: 0;
+$dds-inline-popup-background-width: 100%;
+$dds-inline-popup-background-height: 100%;
+$dds-inline-popup-table-position: absolute;
+$dds-inline-popup-table-background-color: $dds-window-color;
+$dds-inline-popup-table-overflow: hidden;
+$dds-inline-popup-table-border-collapse: collapse;
+$dds-inline-popup-content-width: 100%;
+$dds-inline-popup-title-padding: 4px 10px;
+
 

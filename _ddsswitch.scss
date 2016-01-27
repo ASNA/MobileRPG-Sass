@@ -1,114 +1,103 @@
 ﻿@import "_config";
+@import "mixins/_ddscommon";
 
 /* ==========================================================================
    ddsSwitch
    ========================================================================== */
 
 .ToggleSwitchLabel {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    display: inline-block;
-    height: 2em;
-    width: 7em;
+    // display: $dds-switch-label-display;
+    // height: $dds-switch-label-height;
+    // width: $dds-switch-label-width;
 }
 
 .ToggleSwitchLabelFocus {
-    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    text-shadow: $dds-switch-label-focus-text-shadow-and-color;
 }
 
 .ToggleSwitch {
-    border: 0.1em solid #444;
-    display: inline-block;
-    width: 5em;
-    height: 2em;
-    vertical-align: middle;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 1.1em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // border: $dds-switch-border;
+    border-color: $dds-switch-border-color; 
+    // display: $dds-switch-display;
+    // width: $dds-switch-width;
+    // height: $dds-switch-height;
+    // vertical-align: $dds-switch-vertical-align;
+    // overflow: $dds-switch-overflow;
+    // cursor: $dds-switch-cursor;
+    @include border-radius($dds-switch-border-radius);
+    user-select: $dds-switch-user-select;
+    @include tap-highlight-color($dds-switch-tap-highlight-color);
 }
 
 .ToggleSwitch-wrapper > * {
-    display: block;
-    float: left;
-    height: 2em;
-    line-height: 2em;
-    -webkit-box-shadow: inset 0 0.2em 0.4em rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0 0.2em 0.4em rgba(0, 0, 0, 0.75);
+    // display: $dds-switch-wrapper-child-display;
+    // float: $dds-switch-wrapper-child-float;
+    // height: $dds-switch-wrapper-child-height;
+    // line-height:$dds-switch-wrapper-child-line-height;
+    box-shadow: $dds-switch-wrapper-child-box-shadow-and-color;
 }
 
 .ToggleSwitch > .ToggleSwitch-wrapper {
-    display: block;
-    width: 8em;
-    height: 2em;
-    color: #fff;
-    overflow: hidden;
-    text-shadow: 0 -0.1em 0 rgba(0, 0, 0, 0.8);
-    filter: dropshadow(color=#000000, offx=0, offy=-1);
-    border-radius: 1em;
+    //display: $dds-switch-child-display;
+    //width: $dds-switch-child-width;
+    //height: $dds-switch-child-height;
+    color: $dds-switch-child-color;
+    //overflow: $dds-switch-child-overflow;
+    text-shadow:$dds-switch-child-text-shadow-and-color;
+    //filter: $dds-switch-child-filter;
+    @include border-radius($dds-switch-child-border-radius);
 }
 
 .ToggleSwitch-wrapper > .ToggleSwitch-on {
-    background: #0b0;
-    width: 3em;
-    padding-left: 1em;
-    border-radius: 0.8em 0 0 0.8em;
+    background: $dds-switch-wrapper-toggleSwitch-on-background-color;
+    // width: $dds-switch-wrapper-toggleSwitch-on-width;
+    // padding-left: $dds-switch-wrapper-toggleSwitch-on-padding-left;
+    @include border-radius($dds-switch-wrapper-toggleSwitch-on-border-radius);
 }
 
 .ToggleSwitch-wrapper > .ToggleSwitch-off {
-    background: #b00;
-    width: 3em;
-    padding-right: 1em;
-    text-align: right;
-    border-radius: 0 0.8em 0.8em 0;
+    background: $dds-switch-wrapper-toggleSwitch-off-background-color;
+    // width: $dds-switch-wrapper-toggleSwitch-off-width;
+    // padding-right: $dds-switch-wrapper-toggleSwitch-off-padding-right;
+    // text-align: $dds-switch-wrapper-toggleSwitch-off-text-align;
+    @include border-radius($dds-switch-wrapper-toggleSwitch-off-border-radius);
 }
 
 .ToggleSwitch-wrapper > .ToggleSwitch-handle {
-    background: #eee;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(100%, #aaa)); /* Chrome, Safari4+ */
-    background: -webkit-linear-gradient(top, #eee 0, #aaa 100%); /* Chrome10+, Safari5.1+ */
-    background: linear-gradient(top, #eee 0, #aaa 100%);
-    width: 2em;
-    margin-left: -5em;
-    -webkit-box-shadow: 0 0.15em 0.4em #000;
-    box-shadow: 0 0.15em 0.4em #000;
-    border: 0.1em solid #999;
-    border-radius: 0.99em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    @include linear-gradient($dds-switch-wrapper-toggleSwitch-handle-background-gradient-from-color, $dds-switch-wrapper-toggleSwitch-handle-background-gradient-to-color);
+    // width: $dds-switch-wrapper-toggleSwitch-handle-width;
+    // margin-left: $dds-switch-wrapper-toggleSwitch-handle-margin-left;
+    box-shadow: $dds-switch-wrapper-toggleSwitch-handle-box-shadow-and-color;
+    // border: $dds-switch-wrapper-toggleSwitch-handle-border;
+    border-color: $dds-switch-wrapper-toggleSwitch-handle-border-color;
+    @include border-radius($dds-switch-wrapper-toggleSwitch-handle-border-radius);
+    // @include box-sizing: $dds-switch-wrapper-toggleSwitch-handle-box-sizing;
 }
 
 .ToggleSwitchSwipeRight {
-    margin-left: 0;
+    // margin-left: $dds-switch-swipe-right-margin-left;
 }
 
 .ToggleSwitchSwipeLeft {
-    margin-left: -3em;
+    // margin-left: $dds-switch-swipe-left-margin-left;
 }
 
 .ToggleSwitchRenderAsCheckbox {
-    display: inline-block;
-    width: 5em;
-    height: 2em;
-    vertical-align: middle;
-    overflow: hidden;
-    cursor: pointer;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // display: $dds-switch-render-as-checkbox-display;
+    // width: $dds-switch-render-as-checkbox-width;
+    // height: $dds-switch-render-as-checkbox-height;
+    // vertical-align: $dds-switch-render-as-checkbox-vertical-align;
+    // overflow: $dds-switch-render-as-checkbox-overflow;
+    // cursor: $dds-switch-render-as-checkbox-cursor;
+    // @include user-select: $dds-switch-render-as-checkbox-user-select;
+    @include tap-highlight-color($dds-switch-render-as-checkbox-tap-highlight-color);
 }
 
 .ToggleSwitchRenderAsCheckboxWrapper {
-    display: block;
-    float: left;
-    height: 2em;
-    line-height: 2em;
+    // display: $dds-switch-render-as-checkbox-wrapper-display;
+    // float: $dds-switch-render-as-checkbox-wrapper-float;
+    // height: $dds-switch-render-as-checkbox-wrapper-height;
+    // line-height: $dds-switch-render-as-checkbox-wrapper-line-height;
 }
 
 .ToggleSwitchRenderAsCheckboxCheckbox {

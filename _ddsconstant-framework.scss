@@ -6,14 +6,14 @@
    ========================================================================== */
 
 .DdsConstant {
-   //  @include dds-field($dds-font-family, $dds-font-size, none, 0, $dds-padding);
+    // @include dds-field($dds-font-family, $dds-font-size, none, 0, $dds-padding);
 
-    // border: $border;
-    // margin: $margin;
-    padding:$dds-padding;
+    border: none;
+    margin: 0;
+    // padding: $padding;
 }
 
-//.DdsConstant_Right  {
-//    @extend .DdsConstant;
-//	text-align: right; 
-//}
+.DdsConstant_Right  {
+    @extend .DdsConstant;
+	text-align: right; 
+}

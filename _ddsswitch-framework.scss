@@ -1,0 +1,104 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsSwitch
+   ========================================================================== */
+
+.ToggleSwitchLabel {
+    display: $dds-switch-label-display;
+    height: $dds-switch-label-height;
+    width: $dds-switch-label-width;
+}
+
+.ToggleSwitchLabelFocus {
+    // text-shadow: $dds-switch-label-focus-text-shadow-and-color;
+}
+
+.ToggleSwitch {
+    border: $dds-switch-border;
+    // border-color: $dds-switch-border-color; 
+    display: $dds-switch-display;
+    width: $dds-switch-width;
+    height: $dds-switch-height;
+    vertical-align: $dds-switch-vertical-align;
+    overflow: $dds-switch-overflow;
+    cursor: $dds-switch-cursor;
+    // @include border-radius($dds-switch-border-radius);
+    user-select: $dds-switch-user-select;
+    // @include tap-highlight-color($dds-switch-tap-highlight-color);
+}
+
+.ToggleSwitch-wrapper > * {
+    display: $dds-switch-wrapper-child-display;
+    float: $dds-switch-wrapper-child-float;
+    height: $dds-switch-wrapper-child-height;
+    line-height:$dds-switch-wrapper-child-line-height;
+    // @include box-shadow($dds-switch-wrapper-child-box-shadow-and-color);
+}
+
+.ToggleSwitch > .ToggleSwitch-wrapper {
+    display: $dds-switch-child-display;
+    width: $dds-switch-child-width;
+    height: $dds-switch-child-height;
+    //color: $dds-switch-child-color;
+    overflow: $dds-switch-child-overflow;
+    //text-shadow:$dds-switch-child-text-shadow-and-color;
+    filter: $dds-switch-child-filter;
+    //@include border-radius($dds-switch-child-border-radius);
+}
+
+.ToggleSwitch-wrapper > .ToggleSwitch-on {
+    // background: $dds-switch-wrapper-toggleSwitch-on-background-color;
+    width: $dds-switch-wrapper-toggleSwitch-on-width;
+    padding-left: $dds-switch-wrapper-toggleSwitch-on-padding-left;
+    // @include border-radius($dds-switch-wrapper-toggleSwitch-on-border-radius);
+}
+
+.ToggleSwitch-wrapper > .ToggleSwitch-off {
+    // background: $dds-switch-wrapper-toggleSwitch-off-background-color;
+    width: $dds-switch-wrapper-toggleSwitch-off-width;
+    padding-right: $dds-switch-wrapper-toggleSwitch-off-padding-right;
+    text-align: $dds-switch-wrapper-toggleSwitch-off-text-align;
+    // @include border-radius($dds-switch-wrapper-toggleSwitch-off-border-radius);
+}
+
+.ToggleSwitch-wrapper > .ToggleSwitch-handle {
+    // @include linear-gradient($dds-switch-wrapper-toggleSwitch-handle-background-gradient-from-color, $dds-switch-wrapper-toggleSwitch-handle-background-gradient-to-color);
+    width: $dds-switch-wrapper-toggleSwitch-handle-width;
+    margin-left: $dds-switch-wrapper-toggleSwitch-handle-margin-left;
+    // @include box-shadow($dds-switch-wrapper-toggleSwitch-handle-box-shadow-and-color);
+    border: $dds-switch-wrapper-toggleSwitch-handle-border;
+    // border-color: $dds-switch-wrapper-toggleSwitch-handle-border-color;
+    // @include border-radius($dds-switch-wrapper-toggleSwitch-handle-border-radius);
+    box-sizing: $dds-switch-wrapper-toggleSwitch-handle-box-sizing;
+}
+
+.ToggleSwitchSwipeRight {
+    margin-left: $dds-switch-swipe-right-margin-left;
+}
+
+.ToggleSwitchSwipeLeft {
+    margin-left: $dds-switch-swipe-left-margin-left;
+}
+
+.ToggleSwitchRenderAsCheckbox {
+    display: $dds-switch-render-as-checkbox-display;
+    width: $dds-switch-render-as-checkbox-width;
+    height: $dds-switch-render-as-checkbox-height;
+    vertical-align: $dds-switch-render-as-checkbox-vertical-align;
+    overflow: $dds-switch-render-as-checkbox-overflow;
+    cursor: $dds-switch-render-as-checkbox-cursor;
+    user-select: $dds-switch-render-as-checkbox-user-select;
+    // @include tap-highlight-color($dds-switch-render-as-checkbox-tap-highlight-color);
+}
+
+.ToggleSwitchRenderAsCheckboxWrapper {
+    display: $dds-switch-render-as-checkbox-wrapper-display;
+    float: $dds-switch-render-as-checkbox-wrapper-float;
+    height: $dds-switch-render-as-checkbox-wrapper-height;
+    line-height: $dds-switch-render-as-checkbox-wrapper-line-height;
+}
+
+.ToggleSwitchRenderAsCheckboxCheckbox {
+}

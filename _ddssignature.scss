@@ -1,42 +1,53 @@
 ﻿@import "_config";
-@import "mixins/_ddsignature";
+@import "mixins/_ddscommon";
 
 /* ==========================================================================
    ddsSignature
    ========================================================================== */
 
 .DdsSignature {
-    margin-left: $dds-signature-margin-left;
-    width: $dds-signature-width; 
-    border: $dds-signature-border;
-    -webkit-border-radius: $dds-signature-border-radius;
+    //margin-left: $dds-signature-margin-left;
+    //width: $dds-signature-width; 
+    //border: $dds-signature-border;
+    border-color: $dds-signature-border-color;
+    @include border-radius($dds-signature-border-radius);
 }
 
 .DdsSignLink {
-    right: $dds-sign-link-right;
+//  right: $dds-sign-link-right;
 }
 
 .DdsSignEditor, .DdsSignEditorTitle {
-    margin: 0;
-    padding: 0;
-    border-style: none;
+    //margin: 0;
+    //padding: 0;
+    //border-style: none;
     color: $dds-sign-editor-color;
     background-color: $ddssign-editor-background-color;
 }
 
 .DdsSignEditorTitle {
-    @include sign-editor-title( none, 0, $dds-sign-editor-title-margin-top, $dds-sign-editor-title-text-align, $dds-sign-editor-title-font-size, $dds-sign-editor-title-font-weight );
+    // border: none;
+    // padding: 0;
+    // margin-top: $dds-sign-editor-title-margin-top;
+    // text-align: $dds-sign-editor-title-text-align;
+    font-size: $dds-sign-editor-title-font-size;
+    font-weight: $dds-sign-editor-title-font-weight;
 }
 
 .DdsSignCancelButton, .DdsSignDoneButton, .DdsSignEraseButton {
-    @include signature-button($dds-sign-buttons-margin,0,none,$dds-sign-buttons-font-size,$dds-sign-buttons-color,$dds-sign-buttons-background-color);
+    // margin: $dds-sign-buttons-margin;
+    // padding: 0;
+    // border: none;
+    font-size: $dds-sign-buttons-font-size;
+    color: $dds-sign-buttons-color;
+    background-color: $dds-sign-buttons-background-color;
 }
 
 .DdsSignCancelButton {
-    color: orangered;
+    color: $dds-sign-button-cancel;
 }
 
 .DdsSignDoneButton {
-    font-weight: bold;
-    color: yellow;
+    font-weight: $dds-sign-button-done-weight;
+    color: $dds-sign-button-done;
 }

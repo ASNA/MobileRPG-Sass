@@ -8,72 +8,72 @@
 .DdsTable {
     font: $dds-table-font;
     background: $dds-table-background;
-    border: $dds-table-border;
-    width: $dds-table-width;
+    // border: $dds-table-border;
+    // width: $dds-table-width;
     @include border-radius($dds-table-border-radius);
 }
 
 .DdsTable table {
-    border-collapse: $dds-table-table-border-collapse;
-    width: $dds-table-table-width;
+    // border-collapse: $dds-table-table-border-collapse;
+    // width: $dds-table-table-width;
 }
 
 .DdsTable table td, .DdsTable table th {
-    padding: $dds-table-table-td-th-padding;
+    // padding: $dds-table-table-td-th-padding;
 }
 
 .DdsTable table thead th {
     font-size: $dds-table-table-thead-th-font-size;
     font-weight: $dds-table-table-thead-th-font-weight;
-    border-left: $dds-table-table-thead-th-border-left;
-    background: $dds-table-table-thead-th-background;
-    background: $dds-table-table-thead-th-background-moz;
-    filter: $dds-table-table-thead-th-filter;
-    background-color: $dds-table-table-thead-th-color-start;
+    // border-left: $dds-table-table-thead-th-border-left;
+    @include linear-gradient($dds-table-table-thead-th-color-start,$dds-table-table-thead-th-color-stop);
     color: $dds-table-table-thead-th-color;
 }
 
 .DdsTable table thead th.DdsTableCharColumn {
-    text-align: $dds-table-table-thead-th-charcolumn-text-align;
+    // text-align: $dds-table-table-thead-th-charcolumn-text-align;
 }
 
 .DdsTable table thead th.DdsTableBinaryColumn,
 .DdsTable table thead th.DdsTablePackedColumn,
 .DdsTable table thead th.DdsTableZonedColumn {
-    text-align: $dds-table-table-thead-th-other-columns-text-align;
+    // text-align: $dds-table-table-thead-th-other-columns-text-align;
 }
 
 .DdsTable table thead th:first-child {
-    border: $dds-table-table-thead-th-first-child-border;
+    // border: $dds-table-table-thead-th-first-child-border;
 }
 
 .DdsTable table tbody tr.DdsTableGroupHeading th {
-    font-size: $dds-table-table-tbody-tr-dds-table-group-header-th-font-size;
-    font-weight: $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight;
-    border-left: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left;
-    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background;
-    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background-moz;
-    filter: $dds-table-table-tbody-tr-dds-table-group-header-th-filter;
-    background-color: $dds-table-table-tbody-tr-dds-table-group-header-th-background-color;
+    // font-size: $dds-table-table-tbody-tr-dds-table-group-header-th-font-size;
+    // font-weight: $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight;
+    // border-left: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left;
+    border-left-color: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left-color;
+    @include linear-gradient($dds-table-table-tbody-tr-dds-table-group-header-th-background-color-start, $dds-table-table-tbody-tr-dds-table-group-header-th-background-color-end);
     color: $dds-table-table-tbody-tr-dds-table-group-header-th-color;
-    text-align: left;
+    // text-align: left;
 }
 
 .DdsTable table tbody td {
     font-size: $dds-table-table-tbody-td-font-size;
     font-weight: $dds-table-table-tbody-td-font-weight;
-    border-left: $dds-table-table-tbody-td-border-left;
+    // border-left: $dds-table-table-tbody-td-border-left;
+    border-left-color: $dds-table-table-tbody-td-border-left-color;
     color: $dds-table-table-tbody-td-color;
 }
 
+.DdsTable table tbody td.DdsTableIconColumn{
+    // text-align: $dds-table-table-thead-th-iconcolumn-text-align;
+}
+
 .DdsTable table tbody td.DdsTableCharColumn {
-    text-align: $dds-table-table-tbody-td-charcolumn-text-align;
+   //  text-align: $dds-table-table-tbody-td-charcolumn-text-align;
 }
 
 .DdsTable table tbody td.DdsTableBinaryColumn,
 .DdsTable table tbody td.DdsTablePackedColumn,
 .DdsTable table tbody td.DdsTableZonedColumn {
-    text-align: $dds-table-table-tbody-td-other-columns-text-align;
+   // text-align: $dds-table-table-tbody-td-other-columns-text-align;
 }
 
 .DdsTable table tbody .alt td {
@@ -87,9 +87,13 @@
 }
 
 .DdsTable table tbody td:first-child {
-    border-left: $dds-table-table-tbody-td-first-child-border-left;
+    // border-left: $dds-table-table-tbody-td-first-child-border-left;
 }
 
 .DdsTable table tbody tr:last-child td {
-    border-bottom: $dds-table-table-tbody-tr-last-child-td-border-bottom;
+    // border-bottom: $dds-table-table-tbody-tr-last-child-td-border-bottom;
 }
+
+
+
+

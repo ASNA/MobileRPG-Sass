@@ -9,12 +9,12 @@ ASNA Mobile RPG websites contain two basic Cascading Style Sheets (CSS), namely:
 These CSS files are created in the folder: ~Themes\Current\Styles folder, *where ~ represents the root website folder.*
 
 #### Framework.css 
-Defines the CSS classes that the ASNA Web Controls will use. The names of all ASNA Web controls share the prefix “Dds,” like DdsCharField, DdsConstant, etc.
+Defines the basic CSS classes that the ASNA Web Controls require to render using the Browser's default Fonts and colors. The names of all ASNA Web controls share the prefix “Dds,” like DdsCharField, DdsConstant, etc.
 
 As a rule, do not change the contents of this file.
 
 #### Theme.css
-Defines the CSS classes that establish the overall website style. 
+Further defines the Styles for the ASNA Web Controls, with color (foreground and background), fonts (family and size) and other cosmetic styling such as corner rounding. Feel free to modify the Sass source that produces this file, by adjusting your cosmetic selections and/or adding new styles used by Web controls in your application. 
 
 ### Minifying CSS Resources
 

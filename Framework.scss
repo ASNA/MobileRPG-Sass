@@ -19,46 +19,220 @@
  * that will allow you to generate the Framework.min.css, which you can link from your 
  * MasterPage.master file, replacing the reference to Framework.css.
  *
- * To facilitate working with SASS, ASNA recommends installing the Microsoft "Web Essentials"
- * package for Visual Studio 2013 from here: 
- *    https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
+ * To facilitate working with SASS, ASNA recommends installing the following Visual Studio Extensions:
+ *
+ *    Visual Studio 2015: Go to "Tools" menu and select "Extensions and Updates" option. 
+ *       On the dialog box that appears, click on the "online" extensions, and look for "Web Compiler". 
+ *       Once the "Web compiler" extension is installed, you can right-click on any of the Sass files in 
+ *       your website, and an explicit "Re-compile file" menu option will be available. 
+ *       Re-compiling a Sass file produces the CSS and min.CSS files
+ *
+ *    Visual Studio 2013: install the Microsoft "Web Essentials" package for Visual Studio 2013 from here: 
+ *       https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
  *
 */
 
 @import "_config";
+@import "mixins/_ddscommon";
 
-@media screen { /* All devices - later we override for particular Mobile Touch devices */
+// @media screen { /* All devices - later we override for particular Mobile Touch devices */
 
-    @import "_ddsconstant";
-    @import "_ddscharfield";
-    @import "_ddsdecfield";
-    @import "_ddsdecdatefield";
-    @import "_ddsdatefield";
-    @import "_ddstimefield";
-    @import "_ddstimestampfield";
+// /* Root
+//    ========================================================================== */
+    html {
+        // font-family: $html-font-family;
+    }
 
-    @import "_ddsrecord";
-    @import "_ddswindowrecord";
-    @import "_ddssubfile";
+    body {
+        // margin: $body-margin;
+        // margin-left: $body-margin-left;
+        // margin-right: $body-margin-right;
+        // font-size: $body-font-size;
+    }
 
-    @import "_calendar";
+/* Selection
+    ========================================================================== */
+    ::-moz-selection {
+        background: $selection-background-color;
+        color: $selection-color;
+        text-shadow: $selection-text-shadow;
+    }
 
-    @import "_5250";
+    ::selection {
+        background: $selection-background-color;
+        color: $selection-color;
+        text-shadow: $selection-text-shadow;
+    }
 
-    @import "_ddsbar";
-    @import "_ddspanel";
-    @import "_ddschart";
-    @import "_ddsimage";
-    @import "_ddssignature";
-    @import "_ddsswitch";
+/* Links
+    ========================================================================== */
+    /* Remove gray background color from active links in IE 10 */
+    a {
+        background: transparent;
+        color:$links-color;
+    }
 
-    @import "_ddstable";
+/* Typography
+    ========================================================================== */
+    /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+    b,
+    strong {
+        font-weight: bold;
+    }
+
+    /* Address inconsistent and variable font size in all browsers. */
+    small {
+        font-size: 80%;
+    }
+
+    /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+/* Embedded
+       ========================================================================== */
+    /* Remove border when inside `a` element in IE 8/9. */
+    img {
+        border: 0;
+    }
+
+    /* Correct overflow displayed oddly in IE 9. */
+    svg:not(:root) {
+        overflow: hidden;
+    }
+
+/* Grouping
+       ========================================================================== */
+    /* Address differences between Firefox and other browsers. */
+    hr {
+        box-sizing: content-box;
+        height: 0;
+    }
+
+    /* Address odd `em`-unit font size rendering in all browsers. */
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: Consolas, monospace;
+        font-size: 1em;
+    }
+
+    /* Used by DdsPanel */
+    fieldset {
+        border: 0;
+    }
+
+/* Forms
+    ========================================================================== */
+
+    /* Address `overflow` set to `hidden` in IE 8/9/10. */
+    button {
+        overflow: visible;
+    }
+
+    /*
+        Address inconsistent `text-transform` inheritance for `button` and `select`.
+        All other form control elements do not inherit `text-transform` values.
+        Correct `button` style inheritance in Firefox, IE 8+, and Opera
+        Correct `select` style inheritance in Firefox.
+    */
+    button,
+    select {
+        text-transform: none;
+    }
+
+    /*
+        Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls.
+        Correct inability to style clickable `input` types in iOS.
+        Improve usability and consistency of cursor style between image-type `input` and others.
+    */
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+
+    /* Re-set default cursor for disabled elements. */
+    button[disabled],
+    html input[disabled] {
+        cursor: default;
+    }
+
+    /* Remove inner padding and border in Firefox 4+. */
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+    /* Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+    input {
+        line-height: normal;
+    }
+
+/* ==========================================================================
+    Utility classes
+    ========================================================================== */
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .no-vert-margin {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .no-overflow {
+        overflow: hidden;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+/* ==========================================================================
+    Display files. Default styles for all the DdsXXXX controls.
+    ========================================================================== */
 
     /* When Page submits, cover all elements with a semi-transparent layer to avoid input */
     .SubmitWait {
-	    background-color:  LightGray;     
-	    opacity: $semi-transparency; /* Firefox, Chrome */
-	    filter: alpha(opacity=$semi-transparency-IE); /* IE */
+	    background-color:  LightGray;
+        @include opacity($semi-transparency);
     }
 
     /* If the response has not come within 2 seconds, show a Spinning Wheel */
@@ -67,73 +241,31 @@
 	    background-repeat: no-repeat;
 	    background-position: center;
     }
-}
 
-/*  Media queries
-    ==========================================================================
+// @import "_5250";    - removed from MobileRPG
+@import "_calendar-framework";
+@import "_ddsbar-framework";
+@import "_ddscharfield-framework";
+@import "_ddschart-framework";
+@import "_ddsconstant-framework";
+@import "_ddsdatefield-framework";
+@import "_ddsdecdatefield-framework";
+@import "_ddsdecfield-framework";
+@import "_ddsimage-framework";
+@import "_ddslist-framework";
+@import "_ddspanel-framework";
+@import "_ddsrecord-framework";
+@import "_ddssignature-framework";
+@import "_ddsswitch-framework";
+@import "_ddstable-framework";
+@import "_ddstimefield-framework";
+@import "_ddstimestampfield-framework";
+@import "_ddswindowrecord-framework";
 
-    Media queries allow content rendering to adapt to conditions such
-    as device orientation and device pixel ratio. Some of these conditions
-    (or features) may dynamically change, for example, when a Mobile 
-    device is rotated.
+// }
 
-    In general, we may want to leave the Desktop Browser unchanged - since it
-    uses a mouse pointer as the default input device (highest pointing precision)
-    and orientation does not change.
+// @import "media/_common";
 
-    For mobile devices, depending on their device size, we may want to adjust
-    the height of some web controls and/or adjust some font metrics. (More 
-    advanced adjustments - outside this project - would include hiding some 
-    sections of the UI when the dimension of a mobile device is too small.)
-
-    One possible design guideline is Apple’s recommendations
-    regarding "Adaptability and Layout", described in the following document:
-    
- https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html#//apple_ref/doc/uid/TP40006556-CH54-SW1
-
-    In a nutshell, mobile devices are classified as having either "Regular"
-    or "Compact" dimensions, both vertically and horizontally. Different phones
-    or tablets present different combinations of "size classes" depending
-    on the device model (physical dimensions) and the current orientation.
-    (Android devices could also be categorized in the same fashion.)
-
-    For the purpose of the default MobileRPG-Saas project, we are identifying
-    devices which have "Regular Height", such that we can increase the size of some web
-    controls, such as the DdsBar, and use a larger font on other controls.
-
-    In the case of Apple devices, the only models that present "Regular Height"
-    are the iPads.
-
-    Identifying devices using Media queries, is - unfortunately - tricky, 
-    because there is no consensus on basic feature reporting amongst the device
-    manufacturers; for example, some Android devices report device-width
-    and device-height switched when orientation changes, other devices report
-    "points" instead of "pixels". Media queries support testing for ranges
-    of feature-values, which, if there was consistency amongst manufacturers
-    with would be the best test to apply. Unfortunately, it is currently
-    unreliable. 
-
-    At the time of this writing, there are a very few mobile devices
-    that report "Regular Height". We therefore provide a reliable Media
-    query check for such devices.
-
-    Note:
-
-    You should take an inventory of the devices to be used on your particular
-    website and enable @import entries in the list that follows (and/or
-    un-comment rules provided in the Saas files in folder "media").
-
-    If you have users with devices not included in this MobileRPG-Sass project,
-    you can add more @media blocks, and retrieve the media features and
-    values that the new devices respond to. A very valuable tool ASNA
-    recommends can be found following the link:
-
-    http://pieroxy.net/blog/pages/css-media-queries/test-features.html
-
-    */
-
-
-
-@import "media/_apple";
+// @import "media/_apple";
 // @import "media/_samsung";
 // @import "media/_goggle";

@@ -17,20 +17,20 @@
 }
 
 .DdsInlinePopUpTable {
-	// position: $dds-inline-popup-table-position;
-	// background-color:$dds-inline-popup-table-background-color;
-	// overflow: $dds-inline-popup-table-overflow;
-	// z-index: $top-most-layer;
-	// border-collapse: $dds-inline-popup-table-border-collapse;
+	position: $dds-inline-popup-table-position;
+	background-color:$dds-inline-popup-table-background-color;
+	overflow: $dds-inline-popup-table-overflow;
+	z-index: $top-most-layer;
+	border-collapse: $dds-inline-popup-table-border-collapse;
 }
 
 .DdsInlinePopUpContent {
-	// width: $dds-inline-popup-content-width;
+	width: $dds-inline-popup-content-width;
 }
 
 .DdsInlinePopUpTitle {
-	// padding: $dds-inline-popup-title-padding;
-	// height: $dds-window-title-height;
-	color: $dds-window-title-color;
-	background-color: $dds-window-title-backround-color;
+	padding: $dds-inline-popup-title-padding;
+	height: $dds-window-title-height;
+	// color: $dds-window-title-color;
+	// background-color: $dds-window-title-backround-color;
 }

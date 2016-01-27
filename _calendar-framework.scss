@@ -1,0 +1,56 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   Calendar for ddsDateTime
+   ========================================================================== */
+.CalendarTable {
+	border-collapse: collapse;
+	// font-size: $dds-calendar-small-font-size;
+	text-align: center;
+	// color: $dds-calendar-color;
+	cursor: default;
+	// background-color: $dds-calendar-background-color;
+	width: $dds-calendar-width;
+	height: $dds-calendar-height;
+}
+
+.CalendarCloseCell, .CalendarTitle, .CalendarPrevYear, .CalendarPrevMonth, .CalendarNextMonth, .CalendarNextYear, .CalendarDateCell, .CalendarSelDateCell, .CalendarWeekDayCell, .CalendarNavRow, .CalendarExDateCell {
+	// font-size: $dds-calendar-font-size;
+}
+
+CalendarTitle {
+	// color: $dds-calendar-title-color;
+}
+
+.CalendarDateCell {
+	width: inherit;
+	// color: $dds-calendar-date-cell-color;
+	// background-color: $dds-calendar-date-cell-background-color;
+	cursor: pointer;
+}
+
+.CalendarSelDateCell {
+	width: inherit;
+	// color:$dds-calendar-selected-date-cell-color;
+	// background-color: $dds-calendar-selected-date-cell-background-color;
+	cursor: pointer;
+}
+
+.CalendarWeekDayCell {
+	width: $dds-calendar-selected-date-cell-width;
+	// color: $dds-calendar-week-day-cell-color;
+	// background-color: $dds-calendar-week-day-cell-background-color;
+}
+
+.CalendarTopRow {
+	// color: $dds-calendar-top-row-color;
+}
+
+.CalendarNavRow {
+	// color: $dds-calendar-nav-row-color;
+}
+
+.CalendarExDateCell {
+	// background-color: $dds-calendar-ex-date-cell-color;
+	cursor: pointer;
+}

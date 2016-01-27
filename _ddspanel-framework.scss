@@ -1,0 +1,28 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsPanel
+   ========================================================================== */
+
+fieldset {
+    border: 0;
+    font-size: $dds-panel-fieldset-font-size;
+}
+
+.DdsPanel {
+    padding: $dds-panel-padding;
+    // @include border-radius($dds-panel-border-radius);
+    border: $dds-panel-border;
+    // border-color: $dds-panel-border-color;
+    // background-color: $dds-panel-background-color;
+}
+
+.PanelTitle, .PanelTitle_OutputOnly {
+    // font-size: $dds-panel-title-font-size;
+    // color: $dds-panel-title-color;
+    white-space: $dds-panel-title-white-space;
+    vertical-align: $dds-panel-title-vertical-align;
+    line-height: $dds-panel-title-line-height;
+    text-align: $dds-panel-title-text-align;
+}

@@ -6,37 +6,37 @@
    ========================================================================== */
 
 .DdsDecField {
-    // border: $dds-input-field-border;
-    border-color:  $dds-input-field-border-color;
-    // margin: $dds-input-field-margin;
-    // padding: $dds-padding;    
+    border: $dds-input-field-border;
+    // border-color:  $dds-input-field-border-color;
+    margin: $dds-input-field-margin;
+    padding: $dds-padding;    
     // text-align: right; -- removed, applicable only to Wings
 }
 
 .DdsDecField_Error {
     @extend .DdsDecField;
-    color: $dds-field-error-color;
-    background-color: $dds-field-error-background-color;
+    // color: $dds-field-error-color;
+    // background-color: $dds-field-error-background-color;
 }
 
 .DdsDecField_OutputOnly {
     @extend .DdsDecField;
-    // border: 0;
+    border: 0;
 }
 
 .DdsDecField_Left {
-    // @extend .DdsDecField;
-    // text-align: left; 
+    @extend .DdsDecField;
+    text-align: left; 
 }
 
 .DdsDecField_Left_Error {
-    // @extend .DdsDecField_Error;
-    // text-align: left; 
+    @extend .DdsDecField_Error;
+    text-align: left; 
 }
 
 .DdsDecField_Left_OutputOnly {
-    // @extend .DdsDecField_OutputOnly;
-    // text-align: left; 
-    // border: 0;
+    @extend .DdsDecField_OutputOnly;
+    text-align: left; 
+    border: 0;
 }
 

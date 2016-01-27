@@ -1,0 +1,63 @@
+﻿/*  Media queries
+    ==========================================================================
+
+    Media queries allow content rendering to adapt to conditions such
+    as device orientation and device pixel ratio. Some of these conditions
+    (or features) may dynamically change, for example, when a Mobile 
+    device is rotated.
+
+    In general, we may want to leave the Desktop Browser unchanged - since it
+    uses a mouse pointer as the default input device (highest pointing precision)
+    and orientation does not change.
+
+    For mobile devices, depending on their device size, we may want to adjust
+    the height of some web controls and/or adjust some font metrics. (More 
+    advanced adjustments - outside this project - would include hiding some 
+    sections of the UI when the dimension of a mobile device is too small.)
+
+    One possible design guideline is Apple’s recommendations
+    regarding "Adaptability and Layout", described in the following document:
+    
+ https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LayoutandAppearance.html#//apple_ref/doc/uid/TP40006556-CH54-SW1
+
+    In a nutshell, mobile devices are classified as having either "Regular"
+    or "Compact" dimensions, both vertically and horizontally. Different phones
+    or tablets present different combinations of "size classes" depending
+    on the device model (physical dimensions) and the current orientation.
+    (Android devices could also be categorized in the same fashion.)
+
+    For the purpose of the default MobileRPG-Saas project, we are identifying
+    devices which have "Regular Height", such that we can increase the size of some web
+    controls, such as the DdsBar, and use a larger font on other controls.
+
+    In the case of Apple devices, the only models that present "Regular Height"
+    are the iPads.
+
+    Identifying devices using Media queries, is - unfortunately - tricky, 
+    because there is no consensus on basic feature reporting amongst the device
+    manufacturers; for example, some Android devices report device-width
+    and device-height switched when orientation changes, other devices report
+    "points" instead of "pixels". Media queries support testing for ranges
+    of feature-values, which, if there was consistency amongst manufacturers
+    with would be the best test to apply. Unfortunately, it is currently
+    unreliable. 
+
+    At the time of this writing, there are a very few mobile devices
+    that report "Regular Height". We therefore provide a reliable Media
+    query check for such devices.
+
+    Note:
+
+    You should take an inventory of the devices to be used on your particular
+    website and enable @import entries in the list that follows (and/or
+    un-comment rules provided in the Saas files in folder "media").
+
+    If you have users with devices not included in this MobileRPG-Sass project,
+    you can add more @media blocks, and retrieve the media features and
+    values that the new devices respond to. A very valuable tool ASNA
+    recommends can be found following the link:
+
+    http://pieroxy.net/blog/pages/css-media-queries/test-features.html
+
+    */
+
