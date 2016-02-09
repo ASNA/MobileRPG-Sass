@@ -36,8 +36,13 @@
 }
 
 .NavButtonIcon {
-    // fill:white;
+    // width: $nav-button-icon-width;
+    // height: $nav-button-icon-height;
+    // fill: $nav-button-icon-color;
+    display: $nav-button-icon-display;
+    overflow: $nav-button-icon-overflow;
 }
+
 
 .SignOnButton, .RightAlignButton {
     float: right;

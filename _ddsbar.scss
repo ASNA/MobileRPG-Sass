@@ -29,14 +29,18 @@
     // text-decoration: $nav-button-text-decoration;
     // text-align: $nav-button-text-align;
     // white-space: $nav-button-white-space;
-    color: $nav-button-color;
+    color: $nav-button-icon-color;
     background-color: $nav-button-background-color;
     // vertical-align: $nav-button-vertical-align;
     @include border-radius($nav-button-border-radius);
 }
 
 .NavButtonIcon {
-    fill: $nav-button-color;
+    width: $nav-button-icon-width;
+    height: $nav-button-icon-height;
+    fill: $nav-button-icon-color;
+    // display: $nav-button-icon-display;
+    // overflow: $nav-button-icon-overflow;
 }
 
 .SignOnButton, .RightAlignButton {

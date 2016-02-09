@@ -13,33 +13,42 @@
     //left: $dds-list-list-left;
     //padding: $dds-list-list-padding;
     //width: $dds-list-list-width;
-    background-color: $ddslistlist-background-color;
-    border-radius: $dds-list-list-border-radius;
-    // border: $dds-list-list-border;
-    border-color: $dds-list-list-border-color;
+    background-color: $dds-list-list-background-color;
 }
 
-// .DdsListList.table {
-//     width: 100%;
-// }
+.DdsListList table {
+//    width: 100%;
+//    border-collapse: collapse;
+}
+
+.DdsListList table tbody tr {
+    border-bottom: $dds-list-list-row-border-bottom;
+}
 
 .DdsListDetail {
     font-weight: normal;
 }
 
-// .DdsListImage {
-//    width: $dds-list-image-width;
-//    height: $dds-list-image-height;
-//    background-image: $url-spinningwheel;
-//    background-repeat: no-repeat;
-// }
-
-.DdsListChevron {
+.DdsListImage {
+    width:$dds-list-image-width;
+    height:$dds-list-image-height;
+    background-image: $dds-list-image-background-image;
+    background-repeat: $dds-list-image-repeat;
 }
 
-// .DdsListIcon {
-//    width: $dds-list-image-width;
-//    height: $dds-list-image-height;
-//    background-image: $url-spinningwheel;
-//    background-repeat:no-repeat;
-// }
+.DdsListIcon {
+    fill: $dds-list-icon-fill;
+    width: $dds-list-icon-width;
+    height: $dds-list-icon-height;
+    // display: $dds-list-icon-display;
+    // overflow: $dds-list-icon-overflow;
+}
+
+.DdsListChevron {
+    fill: $dds-list-icon-fill;
+    width: $dds-list-chevron-icon-width;
+    height: $dds-list-chevron-icon-height;
+    // display:  $dds-list-chevron-icon-display;
+    // overflow: $dds-list-chevron-icon-overflow;
+}
+
