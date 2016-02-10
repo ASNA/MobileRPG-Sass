@@ -48,6 +48,17 @@ input[type=text], input[type=password] {
     border-radius: 0;
 }
 
+button[type=button] {
+    -webkit-appearance: none;
+    font-size: 14px;
+    border-radius: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+}
+
 // @media screen { /* All devices - later we override for particular Mobile Touch devices */
 
 // @import "_5250.scss";    - removed from MobileRPG
