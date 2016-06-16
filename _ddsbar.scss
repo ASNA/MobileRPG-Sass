@@ -43,6 +43,9 @@
     // overflow: $nav-button-icon-overflow;
 }
 
-.SignOnButton, .RightAlignButton {
+.SubmitButton {
+    border: $button-border;
+    color: $button-color;
+    background-color: $button-background-color;
     // float: right;
 }
