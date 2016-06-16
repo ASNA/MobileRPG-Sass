@@ -37,6 +37,15 @@
     border: none;
 }
 
+.DdsDateFieldButton {
+    float: $dds-date-field-button-float !important; // !important is unfortunately necessary because DdsDateField generates inline-style="float:right", the CSS float:none does not override it (unless !important is used)
+    height: $dds-date-field-button-height;
+    margin-left: $dds-date-field-button-margin-left;
+    // background-color: $dds-date-field-button-background-color;
+    // border: $dds-date-field-button-border;
+    // color: $dds-date-field-button-color;
+}
+
 // The following are Framework-only CSSs, we make an exception to the color rule (that normally goes into Theme.css
 
 /*

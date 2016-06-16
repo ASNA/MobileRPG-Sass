@@ -12,7 +12,7 @@
 }
 
 .DdsTimestampField_Error {
-    @extend .DdsTimestampField;
+    // @extend .DdsTimestampField;
     color: $dds-field-error-color;
     background-color: $dds-field-error-background-color;
 }

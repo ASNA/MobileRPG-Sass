@@ -12,7 +12,7 @@
 
 .DdsImageUpload {
     height: $dds-image-upload-height;
-    color: $dds-image-upload-color;
+    color: darkgreen;
     // border: $dds-image-upload-border;
     border-color: $dds-image-upload-border-color;
     @include border-radius($dds-image-upload-border-radius);

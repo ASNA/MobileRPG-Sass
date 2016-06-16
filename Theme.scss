@@ -35,29 +35,27 @@ body {
 }
 
 input[type=text], input[type=password], input[type=date] {
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 30px;
-    position: relative;
-    left: 0;
-    outline: none;
-    border: 1px solid lightgray;
-    background-color: white;
-    font-size: 14px;
-    -webkit-appearance: none;
-    border-radius: 0;
+    padding-left: $input-padding-left;
+    padding-right: $input-padding-right;
+    height: $input-height;
+    position: $input-position;
+    left: $input-left;
+    outline: $input-outline;
+    border: $input-border;
+    background-color: $input-background-color;
+    font-size: $input-font-size;
+    -webkit-appearance: $input-webkit-appearance;
+    border-radius: $input-border-radius;
 }
 
 button[type=button] {
-    -webkit-appearance: none;
-    font-size: 14px;
-    border-radius: 0;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border: 1px solid gray;
-    color: gray;
-    background-color: white;
+    -webkit-appearance: $button-webkit-appearance;
+    font-size: $button-font-size;
+    border-radius: $button-border-radius;
+    padding-top: $button-padding-top;
+    padding-bottom: $button-padding-bottom;
 }
+
 
 // @media screen { /* All devices - later we override for particular Mobile Touch devices */
 

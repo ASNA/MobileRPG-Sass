@@ -12,7 +12,8 @@ $dds-font-family: $font-family-base;
 $dds-font-size: 14px;
 $dds-padding: 0;
 $dds-input-field-border-color: #c0c0c0;
-$dds-input-field-margin: 2px 0 0 0;
+$dds-input-field-margin-left: 2px;
+$dds-input-field-margin: $dds-input-field-margin-left 0 0 0;
 $dds-input-field-border: 1px solid;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
@@ -26,10 +27,37 @@ $body-margin: 0;
 $body-margin-left: 0.5em;
 $body-margin-right: 0.5em;
 
+$input-padding-left: 5px;
+$input-padding-right: 5px;
+$input-height: 30px;
+$input-position: relative;
+$input-left: 0;
+$input-outline: none;
+$input-border: 1px solid lightgray;
+$input-background-color: white;
+$input-font-size: 14px;
+$input-webkit-appearance: none;
+$input-border-radius: 0;
+
+$button-webkit-appearance: none;
+$button-font-size: 14px;
+$button-border-radius: 0;
+$button-padding-top: 4px;
+$button-padding-bottom: 4px;
+$button-border: 1px solid gray;
+$button-color: gray;
+$button-background-color: white;
+
 $std-box-border-radius: 3px;
 
 // ddsDateField
 $dds-date-field-non-absolute-width: 70%; // input text 70%, button 30% of parent DIV
+$dds-date-field-button-float: none; // !important is unfortunately necessary because DdsDateField generates inline-style="float:right", the CSS float:none does not override it (unless !important is used)
+$dds-date-field-button-height: $input-height + $dds-input-field-margin-left;
+$dds-date-field-button-background-color: white;
+$dds-date-field-button-border: 1px solid lightgray;
+$dds-date-field-button-color: darkgray;
+$dds-date-field-button-margin-left: -1px;
 
 // ddsSubfile
 $dds-subfile-width: 100%;
