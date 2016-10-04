@@ -1,0 +1,23 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   DdsDecRange
+   ========================================================================== */
+
+.RangeNumericValue {
+    text-align: center
+}
+
+.RangeStepButton {
+    margin: 0px;
+    width: 34px;
+    height: 34px;
+    color: white;
+    background: #2baee2;
+    border: 0px;
+    padding: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}

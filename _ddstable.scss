@@ -26,17 +26,22 @@
     color: $dds-table-heading-color;
 }
 
-.DdsTableIconColumn {
+.DdsTableIconColumn,
+.DdsTableIconColumnHeading {
     text-align: $dds-table-iconcolumn-text-align;
 }
 
-.DdsTableCharColumn {
+.DdsTableCharColumn,
+.DdsTableCharColumnHeading {
     text-align: $dds-table-charcolumn-text-align;
 }
 
 .DdsTableBinaryColumn,
+.DdsTableBinaryColumnHeading,
 .DdsTablePackedColumn,
-.DdsTableZonedColumn {
+.DdsTablePackedColumnHeading,
+.DdsTableZonedColumn,
+.DdsTableZonedColumnHeading {
     text-align: $dds-table-other-columns-text-align;
 }
 
